@@ -41,7 +41,7 @@ FLOOD = int(environ.get("FLOOD", "10"))
 RENAME_MODE = bool(environ.get("RENAME_MODE"))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5651594253').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 UPDATES_CHANNEL = int(environ. get('UPDATES_CHANNEL', '-1001952663939'))
 

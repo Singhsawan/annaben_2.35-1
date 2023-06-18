@@ -60,10 +60,10 @@ BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-10019
 BIN_CHANNEL = int(environ. get('BIN_CHANNEL', '-1001949268590'))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Rishikesh001:Rishikesh001@cluster0.lqncnak.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-SESSION_NAME = str(getenv('SESSION_NAME', 'benanabot'))
+SESSION_NAME = str(getenv('SESSION_NAME', 'beanabot'))
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
